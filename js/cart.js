@@ -192,7 +192,7 @@ function addWishlistToCartClicked(event){
 
     var imgSrc = shopItem.getElementsByClassName('wishlist-cart-img')[0].src;
     var name = shopItem.getElementsByClassName('wishlist-cart-name')[0].innerHTML;
-    var price = shopItem.getElementsByClassName('wishlist-cart-price')[0].innerText;
+    var price = shopItem.getElementsByClassName('wishlist-cart-price')[0].innerText.replace("$","");
 
     addItemToCart(imgSrc, name, price);
     button.parentElement.parentElement.remove();
