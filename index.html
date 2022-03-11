@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Custom</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- icon -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- app css -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- mobile menu -->
+        <div class="mobile-menu bg-second">
+            <a href="#" class="mb-logo home">RetroCustom</a>
+            <span class="mb-menu-toggle" id="mb-menu-toggle">
+                <i class='bx bx-menu'></i>
+            </span>
+        </div>
+        <!-- end mobile menu -->
+        <!-- main header -->
+        <div class="header-wrapper" id="header-wrapper">
+            <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+                <i class='bx bx-x'></i>
+            </span>
+
+            <!-- mid header -->
+            <div class="bg-main">
+                <div class="mid-header container">
+                    <a href="#" class="logo home">RetroCustom</a>
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class='bx bx-search-alt'></i>
+                    </div>
+                    <ul class="user-menu">
+                        <li>
+                            <div>
+                                <a href="#"><i class='bx bx-heart'></i></a>
+                                <span class="wishlist-count">1</span>
+                            </div>          
+                        </li>
+                        <li>
+                            <div>
+                                <a href="#"><i class='bx bx-cart'></i></a>
+                                <span class="cart-count">1</span>
+                            </div>          
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end mid header -->
+            <!-- bottom header -->
+            <div class="bg-second">
+                <div class="bottom-header container">
+                    <ul class="main-menu">
+                        <li><a href="#" class="go-home home">home</a></li>
+                        <!-- mega menu -->
+                        <li class="mega-dropdown">
+                            <a href="">Shop<i class='bx bxs-chevron-down'></i></a>
+                            <div class="mega-content">
+                                <div class="row">
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <a href="#"><h3 class="render" id="render-laptop">Laptop</h3></a>
+                                            <ul>
+                                                <li><a href="#" class="render" id="render-laptop">ASUS</a></li>
+                                                <li><a href="#" class="render" id="render-laptop">MSI</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <a href="#"><h3 class="render" id="render-hardware">PC Hardware</h3></a>
+                                            <ul>
+                                                <li><a href="#" class="render" id="render-hardware">CPU</a></li>
+                                                <li><a href="#" class="render" id="render-hardware">RAM</a></li>
+                                                <li><a href="#" class="render" id="render-hardware">Intel</a></li>
+                                                <li><a href="#" class="render" id="render-hardware">AMD</a></li>
+                                                <li><a href="#" class="render" id="render-hardware">GPU</a></li>
+                                                <li><a href="#" class="render" id="render-hardware">Storage</a></li>
+                                                <li><a href="#" class="render" id="render-hardware">Case</a></li>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <a href="#"><h3 class="render" id="render-peripherals">Peripherals</h3></a>
+                                            <ul>
+                                                <li><a href="#" class="render" id="render-peripherals">Razer</a></li>
+                                                <li><a href="#" class="render" id="render-peripherals">MSI</a></li>
+                                                <li><a href="#" class="render" id="render-peripherals">ASUS</a></li>
+                                                <li><a href="#" class="render" id="render-peripherals">Logitech</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-md-12">
+                                        <div class="box">
+                                            <a href="#"><h3 class="render" id="render-accessories">Accessories</h3></a>
+                                            <ul>
+                                                <li><a href="#" class="render" id="render-accessories">TP-Link</a></li>
+                                                <li><a href="#" class="render" id="render-accessories">ADATA</a></li>
+                                                <li><a href="#" class="render" id="render-accessories">Targus</a></li>
+                                                <li><a href="#" class="render" id="render-accessories">ASUS</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row img-row">
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./images/JBL_TUNE220TWS_ProductImage_Pink_ChargingCaseOpen.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./images/JBL_JR 310BT_Product Image_Hero_Skyblue.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="box">
+                                            <img src="./images/JBLHorizon_001_dvHAMaster.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- end mega menu -->
+                        <li><a href="#" class="go-to-contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- end bottom header -->
+        </div>
+        <!-- end main header -->
+    </header>
+    <!-- end header -->
+
+     <!-- shop section -->
+     <div class="bg-main shop-sec">
+        <div class="container">
+            <div class="box">
+                <div class="row">
+                    <div class="col-3 filter-col" id="filter-col">
+                        <div class="box filter-toggle-box">
+                            <button class="btn-flat btn-hover" id="filter-close">close</button>
+                        </div>
+                        <div class="box">
+                            <span class="filter-header">
+                                Categories
+                            </span>
+                            <ul class="filter-list">
+                                <li><a href="#" class="render" id="render-laptop">Laptop</a></li>
+                                <li><a href="#" class="render" id="render-hardware">PC Hardware</a></li>
+                                <li><a href="#" class="render" id="render-peripherals">Peripherals</a></li>
+                                <li><a href="#" class="render" id="render-accessories">Accessories</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9 col-md-12">
+                        <div class="box filter-toggle-box">
+                            <button class="btn-flat btn-hover" id="filter-toggle">filter</button>
+                        </div>
+                        <div class="box">
+                            <div class="row shop-items " id="products">                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end shop section -->
+
+    <!-- contact section-->
+    <div class="contact-sec">
+        <div class="contact-wrap">
+            <div class="contact-in">
+                <h1>Contact Info</h1>
+                <h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+                <p><a href="#">(+855) 925 551 851</a></p>
+                <p><a href = "#">(+855) 122 551 889</a></p>
+                <p><a href = "#">(+855) 995 552 098</a></p>
+                <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+                <p>retrocustom@gmail.com</p>
+                <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
+                <p>No. 8, St. 315, Boeng Kak 1, Tuol Kork, Phnom Penh, Cambodia</p>
+                <ul>
+                    <li><a href="https://web.facebook.com/ASUS855/?brand_redir=179161458793927" target="_blank">
+                            <i class='fa fa-facebook' aria-hidden="true"></i>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/asus/" target="_blank">
+                            <i class='fa fa-instagram' aria-hidden="true"></i>
+                        </a></li>
+                    <li><a href="https://www.youtube.com/c/ASUS" target="_blank">
+                            <i class='fa fa-youtube' aria-hidden="true"></i>
+                        </a></li>
+                    <li><a href="https://twitter.com/ASUS_ROG" target="_blank">
+                            <i class='fa fa-twitter' aria-hidden="true"></i>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="contact-in">
+                <h1>Send a Message</h1>
+                <form action = "https://formspree.io/f/xdobolde" method = "post" class = "form">
+                    <div>
+                        <input type = "text" placeholder="First Name" id = "firstName" name = "firstName" class = "contact-in-input">
+                    </div>
+                    <div>
+                        <input type = "text" placeholder = "Last Name" id = "lastName" name = "lastName" class = "contact-in-input">
+                    </div>
+                    <div>
+                        <input type = "text" placeholder = "Email" id = "email" name = "email" class = "contact-in-input">
+                    </div>
+                    <div>
+                        <input type = "text" placeholder = "Subject" id = "subject" name = "subject" class = "contact-in-input">
+                    </div>
+                    <div >
+                        <textarea name = "subject" id = "subject" rows = "10" cols = "30" placeholder="Message" class = "contact-in-textarea"></textarea>
+                    </div>
+                    <div>
+                        <input type = "submit" value = "submit" class = "contact-in-btn btn-hover btn-flat">
+                    </div>
+                </form>
+            </div>
+            <div class="contact-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.5715417396736!2d104.8956003137756!3d11.58254224696598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109517959cf2aad%3A0x1a48bdf9d413253d!2s8%20St%20315%2C%20Phnom%20Penh!5e0!3m2!1sen!2skh!4v1646825571145!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- end contact section -->
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="slider">
+            <div class="container">
+                <!-- slide item -->
+                <div class="slide active">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                Apple MacBook Pro (13 inch)
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Next-gen design
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                The latest. Take a look at what’s new, right now.<br>
+                                Shop one on one with a Specialist. Online or in store.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img top-down">
+                        <img src="https://m.media-amazon.com/images/I/71an9eiBxpL._SL1500_.jpg" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                Rtx 2080 Ti X Gaming Trio
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Modern GPU
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Here are the best graphics cards for gaming, from high-end to budget solutions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img right-left">
+                        <img src="https://www.pngall.com/wp-content/uploads/5/Graphic-Card-PNG-Picture.png" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+                <!-- slide item -->
+                <div class="slide">
+                    <div class="info">
+                        <div class="info-content">
+                            <h3 class="top-down">
+                                ADATA 4TB HD830
+                            </h3>
+                            <h2 class="top-down trans-delay-0-2">
+                                Portable Hard Drive
+                            </h2>
+                            <p class="top-down trans-delay-0-4">
+                                Tech-savvy users need to carry their data with them through challenging environments. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="img left-right">
+                        <img src="https://m.media-amazon.com/images/I/51ycXAQOvsL._AC_.jpg" alt="">
+                    </div>
+                </div>
+                <!-- end slide item -->
+            </div>
+            <!-- slider controller -->
+            <button class="slide-controll slide-next">
+                <i class='bx bxs-chevron-right'></i>
+            </button>
+            <button class="slide-controll slide-prev">
+                <i class='bx bxs-chevron-left'></i>
+            </button>
+            <!-- end slider controller -->
+        </div>
+    </div>
+    <!-- end hero section -->
+
+    <!-- promotion section -->
+    <div class="promotion">
+        <div class="row">
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>Accessories</h3>
+                        <button class="btn-flat btn-hover"><span id="shop1">shop collection</span></button>
+                    </div>
+                    <img src="https://webapi3.adata.com/storage/product/61845_black.png" alt="">
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>PC Hardware</h3>
+                        <button class="btn-flat btn-hover"><span id="shop2">shop collection</span></button>
+                    </div>
+                    <img src="https://www.pngkey.com/png/full/544-5448924_pc-gaming-rgb-win-805-infinity-mid-tower.png" alt="">
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-sm-12">
+                <div class="promotion-box">
+                    <div class="text">
+                        <h3>Laptop</h3>
+                        <button class="btn-flat btn-hover"><span id="shop3">shop collection</span></button>
+                    </div>
+                    <img src="https://www.asus.com/media/Odin/Websites/global/ProductLine/20210107110530/P_setting_xxx_0_90_end_185.png?webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end promotion section -->
+
+    <!-- product detail section -->
+    <div class="product-detail-sec">
+       <div class="product-detail-bg product-details">
+            <div class="row product-row">
+                <div class="product-img" id="product-img">
+                    <img src="./images/kisspng-beats-electronics-headphones-apple-beats-studio-red-headphones.png" alt="">
+                </div>
+                <div class="col-7 col-md-12">
+                    <div class="product-info">
+                        <h1 class="product-detail-name">
+                            JBL TUNE 750TNC
+                        </h1>
+                        <div class="product-info-detail">
+                            <span class="product-info-detail-title">Brand:</span>
+                            <a href="#">JBL</a>
+                        </div>
+                        <p class="product-description">
+                            13 inch size <br>Apple M1 chip with 8-core CPU and 8-core GPU <br>8 or 16 GB of unified RAM <br>True Tone display and Touch Bar<br>Up to 2 TB SSD storage>br>Scissor-switch Magic Keyboard
+                        </p>
+                        <div class="product-info-price">$300</div>
+                    </div>
+                </div>
+                <div class="product-detail-cancel"><i class='bx bxs-x-circle'></i></div>
+            </div>
+       </div>
+    </div>
+    <!-- end product detail section -->
+
+    <!-- product list -->
+    <div class="section product-sec">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest product</h2>
+            </div>
+            <div class="row" id="latest-products">
+            </div>
+            <div class="section-footer">
+                <a href="#" class="btn-flat btn-hover render" id="render-laptop">view all</a>
+            </div>
+        </div>
+    </div>
+    <!-- end product list -->
+
+    <!-- special product -->
+    <div class="bg-second special-product-sec">
+        <div class="section container">
+            <div class="row">
+                <div class="col-4 col-md-4">
+                    <div class="sp-item-img">
+                        <img src="https://assets2.razerzone.com/images/pnx.assets/a261310930e05496d0f372160361523c/razer-kraken-bt-kitty-edition.png" alt="">
+                    </div>
+                </div>
+                <div class="col-7 col-md-8">
+                    <div class="sp-item-info">
+                        <div class="sp-item-name">Razer Kraken Kitty</div>
+                        <p class="sp-item-description">
+                            Explore our top products and find something new.  See what’s in store for you.
+                        </p>
+                        <button class="btn-flat btn-hover" id="shop4">shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end special product -->
+
+    <!-- product list -->
+    <div class="section product-sec">
+        <div class="container">
+            <div class="section-header">
+                <h2>best selling</h2>
+            </div>
+            <div class="row" id="best-products">
+            </div>
+            <div class="section-footer">
+                <a href="#" class="btn-flat btn-hover render" id="render-hardware">view all</a>
+            </div>
+        </div>
+    </div>
+    <!-- end product list -->
+
+    <!-- wishlist -->
+    <div class="section wishlist-sec">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Wishlist</h2>
+            </div>
+            <div class="row">
+                <div class="wishlist-cart-table">
+                    <table>
+                        <thead>
+                            <tr class="wishlist-table-header">
+                                <th>Remove</th>
+                                <th>Image</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Add to cart</th>
+                            </tr>
+                        </thead>
+                        <tbody class="show-cart wishlist-cart-items" id="all-cards">
+                        </tbody>
+                        <tr class="wishlist-subtotal">
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end wishlist -->
+
+    <!-- cart -->
+    <div class="section cart-sec">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shopping Cart</h2>
+            </div>
+            <div class="row">
+                <div class="cart-table">
+                    <table>
+                        <thead>
+                            <tr class="table-header">
+                                <th>Remove</th>
+                                <th>Image</th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody class="show-cart cart-items" id="all-cards">
+                        </tbody>
+                        <tr class="subtotal">
+                            <td colspan="5"><h3>Total:</h3></td>
+                            <td><h3 class="cart-total-price">$0</h3></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-5 check-out-info">
+                    <form id="submit-form">
+                        <h3>Your Information</h3>
+                        <div class="success">
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                            <small></small>
+                        </div>
+                        <div class="error">
+                            <input type="text" name="mail" id="mail" placeholder="Email" required>
+                            <small></small>
+                        </div>
+                        <div class="error">
+                            <input type="text" name="phone" id="phone" placeholder="Phone Number" required>
+                            <small></small>
+                        </div>
+                        <div class="success">
+                            <input type="text" name="address" id="address" placeholder="Address" required>
+                            <small></small>
+                        </div>
+                        <h3>Payment method</h3>
+                        <input type="radio" name="payment" id="cash" value="" checked>
+                        <label>Cash</label> <br>
+                        <input type="radio" name="payment" id="aba" value="">
+                        <label>ABA Payment</label> <br>
+                        <input type="submit" class="btn-flat btn-hover btn-check-out" value="Check Out">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end cart -->
+
+    <!-- footer -->
+    <footer class="bg-second footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Have any questions?<br> Call us</h3>
+                    <ul class="menu">
+                        <li><a href="#">(+855) 925 551 851</a></li>
+                        <li><a href="#">(+855) 122 551 889</a></li>
+                        <li><a href="#">(+855) 995 552 098</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">Address</h3>
+                    <ul class="menu">
+                        <li><a href="#">No. 8, St. 315, Boeng Kak 1, Tuol Kork, Phnom Penh, Cambodia</a></li>
+                    </ul>
+                    <h3 class="footer-head">Email</h3>
+                    <ul class="menu footer-mail">
+                        <li><a href="#">retrocustom@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6">
+                    <h3 class="footer-head">support</h3>
+                    <ul class="menu">
+                        <li><a href="#" class="home">about</a></li>
+                        <li><a href="#" class="go-to-contact">Contact us</a></li>
+                        <li><a href="#" class="home">FAQS</a></li>
+                        <li><a href="#" class="home">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="contact">
+                        <h3 class="contact-header">
+                            RetroCustom
+                        </h3>
+                        <ul class="contact-socials">
+                            <li><a href="https://web.facebook.com/ASUS855/?brand_redir=179161458793927" target="_blank">
+                                    <i class='bx bxl-facebook-circle'></i>
+                                </a></li>
+                            <li><a href="https://www.instagram.com/asus/" target="_blank">
+                                    <i class='bx bxl-instagram-alt'></i>
+                                </a></li>
+                            <li><a href="https://www.youtube.com/c/ASUS" target="_blank">
+                                    <i class='bx bxl-youtube'></i>
+                                </a></li>
+                            <li><a href="https://twitter.com/ASUS_ROG" target="_blank">
+                                    <i class='bx bxl-twitter'></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <input type="email" placeholder="ENTER YOUR EMAIL">
+                        <button>subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- app js -->
+    <script src="./js/app.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/cart.js"></script>
+    <!-- <script src="./js/shop.js"></script> -->
+    <!-- <script src="./js/item-detail.js"></script> -->
+
+</body>
+
+</html>
