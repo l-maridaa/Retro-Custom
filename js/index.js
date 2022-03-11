@@ -87,6 +87,48 @@ var products = [{"product_id":1,"category":"Laptop","brand":"ASUS","name":"ProAr
 {"product_id":38,"category":"Accessories","brand":"Targus","name":"Targus/ECI 15.6  Sport Backpack (Black)","imgSrc":"./images/Artboard 38.png","price":20,"desc":"Sporty on the outside  all business on the inside  the 15.6  Sport Backpack is made for the professional on the go. The water bottle pockets put hydration at arm s length whether you're on the train or the airport  while a pocket on the front puts your essentials within easy reach. The pack is functional  too  with reflective accents that help to increase visibility. Its lightweight design is super sporty with a contemporary look and feel."},
 {"product_id":39,"category":"Accessories","brand":"ASUS","name":"ASUS ROG Rapture WiFi 6 Gaming Router","imgSrc":"./images/Artboard 39.png","price":429,"desc":"Triple level game acceleration accelerate game traffic With device  game packet and game server prioritization <br/>Cutting edge hardware offers the best performance 1.8 GigaHertz Quad Core cpu and 2.5 G gaming port for ultimate performance<br/>Your own gaming mesh network Compatible with ASUS AiMesh Wi Fi system for seamless whole home coverage.Memory:256 MB Flash 1 GB RAM<br/>ASUS wrt enables support for open advanced monitoring and control which includes device bandwidth utilization as well as device or usage prioritization<br/>"}]
 
+// search function
+const searchBar = document.getElementById('search-bar');
+searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase();
+    removeCardRendered();
+    products.forEach(p => {
+        if ((p.name).toLowerCase().includes(searchString)){
+            console.log(searchString, p.name)
+            var shopItems = document.getElementsByClassName('shop-items')[0];
+            var cardRow = document.createElement('div');
+            cardRow.classList.add('product-card');
+            cardRow.id = p.product_id;
+            let prod = `
+                <img class="cart-img" src="${p.imgSrc}" alt="">
+                <div class="product-card-info">
+                    <div class="product-btn">
+                        <button class="btn-flat btn-hover btn-shop-now">View detail</button>
+                        <button class="btn-flat btn-hover btn-cart-add">
+                            <i class='bx bxs-cart-add'></i>
+                        </button>
+                        <button class="btn-flat btn-hover btn-card-add btn-heart-add">
+                            <i class='bx bxs-heart'></i>
+                        </button>
+                    </div>
+                    <div class="product-card-name">
+                        ${p.name}
+                    </div>
+                    <div class="product-card-price">
+                        <span class="curr-price">$${p.price}</span>
+                    </div>
+                </div>
+            `;
+            cardRow.innerHTML = prod;
+            shopItems.append(cardRow);
+            cardRow.getElementsByClassName('btn-shop-now')[0].addEventListener('click', showDetailClicked);
+            cardRow.getElementsByClassName('btn-cart-add')[0].addEventListener('click', addToCartClicked);
+            cardRow.getElementsByClassName('btn-heart-add')[0].addEventListener('click', addToWishlistClicked);
+        }
+    })
+    displayShop();
+});
+
 // render products in latest products & best products
 let product_list = document.querySelector('#latest-products')
 let best_product_list = document.querySelector('#best-products')
