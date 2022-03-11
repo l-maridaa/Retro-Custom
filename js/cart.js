@@ -512,3 +512,5 @@ function closeProductDetail(event){
     var closeButton = event.target;
     closeButton.parentElement.parentElement.parentElement.parentElement.style.display = "none";
 }
+
+
